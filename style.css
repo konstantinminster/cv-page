@@ -4,6 +4,7 @@ ToDo:
 - switch to tailwind csss
 - refactor with webcomponents
 - outsource content to ?? (contentful, storyblock, notion?)
+- add my personal skills to the sidebar
 */
 
 
@@ -11,9 +12,19 @@ ToDo:
     box-sizing: border-box;
 }
 
+html {
+    background: url(img/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
-    background-color: rgb(236, 236, 236);
     font-size: 15px;
+    margin: 0px;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 0 20px 0;
 }
 
 #page {
@@ -22,10 +33,9 @@ body {
     width: 85%;
     min-width: 990px;
     max-width: 1440px;
-    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: 0px 5px 10px lightgray;
+    box-shadow: 0px 5px 20px rgb(177, 177, 177);
     border-radius: 10px;
-
+    overflow: hidden;
 }
 
 .wrapper-main,
@@ -64,6 +74,7 @@ h3 {
     color: #76a5af;
     font-family: "Quicksand", cursive;
     font-weight: normal;
+    font-style: italic;
 }
 
 h1 {
@@ -80,7 +91,7 @@ h2 {
 h3 {
     color: #76a5af;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 500;
 }
 
@@ -91,6 +102,8 @@ h4 {
 
 .experience-item {
     line-height: 26px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .experience-item UL {
@@ -136,13 +149,14 @@ h4 {
 }
 
 .sidebar-section {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 0px 20px;
+    font-size: 0.80rem;
     color: grey;
 }
 
 .sidebar-section h3 {
-    margin-bottom: 10px;
+    margin: 30px 0 10px 0;
+    font-size: 15px;
 }
 
 .sidebar-section p {
@@ -170,4 +184,17 @@ h4 {
 P {
     margin: 10px 0px;
     display: block;
+}
+
+footer {
+    width: 85%;
+    min-width: 990px;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer A {
+ color: black;
 }
