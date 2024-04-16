@@ -1,3 +1,12 @@
+/*
+ToDo:
+- add Fonts via css import
+- switch to tailwind csss
+- refactor with webcomponents
+- outsource content to ?? (contentful, storyblock, notion?)
+*/
+
+
 * {
     box-sizing: border-box;
 }
@@ -35,6 +44,11 @@ body {
     padding: 20px 40px 40px 40px;
 }
 
+.header-main P {
+    font-size: 20px;
+    font-weight: 300;
+}
+
 h1,
 h2,
 h3,
@@ -53,7 +67,9 @@ h3 {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 200;
 }
 
 h2 {
@@ -81,13 +97,7 @@ h4 {
     padding: 0 20px;
 }
 
-.sidebar {
-    background-color: #d0e0e3;
-    width: 25%;
-}
-
 .header-sidebar {
-    min-height: 180px;
     background-color: #a2c4c9;
     padding: 20px;
     width: 25%;
@@ -113,12 +123,16 @@ h4 {
     line-height: 30px;
     display: flex;
     justify-content: left;
-    align-items: center;
-    /* center icons vertical */
+    align-items: center; /* center icons vertical */
 }
 
 .contact-data LI IMG {
     margin-right: 10px;
+}
+
+.sidebar {
+    background-color: #d0e0e3;
+    width: 25%;
 }
 
 .sidebar-section {
