@@ -5,44 +5,51 @@
 body {
     background-color: rgb(236, 236, 236);
     font-size: 15px;
-   
 }
 
-#wrapper {
+#page {
     background-color: white;
     margin: 20px auto;
-    width: 80%; 
+    width: 85%;
     min-width: 990px;
     max-width: 1440px;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 5px 10px lightgray;
+    border-radius: 10px;
+
+}
+
+.wrapper-main,
+.header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: 0px 5px 10px lightgray;
-    border-radius: 10px;
     overflow: hidden;
+
 }
 
-.main {
-    width: 75%;
-    padding: 40px;
-}
-
+.main,
 .header-main {
-    height: 120px;
+    width: 75%;
+    padding: 20px 40px 40px 40px;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
     padding: 0px;
     margin: 0px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #76a5af;
     font-family: "Quicksand", cursive;
     font-weight: normal;
-
 }
 
 h1 {
@@ -50,7 +57,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 30px; 
+    margin-top: 0px;
     font-size: 30px;
 }
 
@@ -74,7 +81,6 @@ h4 {
     padding: 0 20px;
 }
 
-
 .sidebar {
     background-color: #d0e0e3;
     width: 25%;
@@ -84,7 +90,7 @@ h4 {
     min-height: 180px;
     background-color: #a2c4c9;
     padding: 20px;
-    margin-bottom: 30px;
+    width: 25%;
 }
 
 .header-sidebar a {
@@ -97,7 +103,7 @@ h4 {
 }
 
 .contact-data {
-    padding: 15px 0 0 30px;
+    padding: 15px 0 0 0px;
     margin: 0px;
     list-style: none;
 }
@@ -105,13 +111,20 @@ h4 {
 .contact-data LI {
     font-size: 13px;
     line-height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* center icons vertical */
+}
+
+.contact-data LI IMG {
+    margin-right: 10px;
 }
 
 .sidebar-section {
     padding: 10px 20px;
     font-size: 0.9rem;
     color: grey;
-    
 }
 
 .sidebar-section h3 {
@@ -129,3 +142,18 @@ h4 {
     line-height: 20px;
 }
 
+.sidebar-section .no-bullets {
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar-section .no-bullets LI {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+P {
+    margin: 10px 0px;
+    display: block;
+}
